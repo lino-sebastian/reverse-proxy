@@ -1,0 +1,13 @@
+server:
+  port: 443
+  ssl:
+    key-store: keystore.pkcs12
+    key-store-password: compway
+    keyStoreType: PKCS12
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          netflix: trace

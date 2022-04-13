@@ -1,0 +1,18 @@
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    bona-fide-user-webapp:
+      path: /bona-fide-user-webapp/**
+      url: 'http://localhost:9000/bona-fide-user-webapp'
+    bona-fide-user-service:
+      path: /bona-fide-user-service/**
+      url: 'http://localhost:9001/bona-fide-user-service'
+    bona-fide-webapp:
+      path: /bona-fide-webapp/**
+      url: 'http://localhost:9002/bona-fide-webapp'
+    bona-fide-service:
+      path: /bona-fide-service/**
+      url: 'http://localhost:9003/bona-fide-service'
+    home:
+      path: /**
+      url: 'http://localhost:9000/bona-fide-user-webapp'
